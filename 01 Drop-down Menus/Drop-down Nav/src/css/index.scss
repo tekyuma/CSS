@@ -1,0 +1,82 @@
+:root {
+  --primary-color: violet;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  outline: 1px solid black;
+  height: 30em;
+  width: 20em;
+  position: relative;
+
+  header {
+    outline: 1px solid black;
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    h2 {
+      font-size: 1.7em;
+      font-weight: 700;
+
+      span {
+        color: var(--primary-color);
+      }
+    }
+
+    img {
+      width: 2em;
+      cursor: pointer;
+    }
+
+    nav {
+      background: var(--primary-color);
+      outline: 1px solid black;
+      margin: 0;
+      display: none;
+
+      .display {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 55%;
+
+        img {
+          float: right;
+          margin: 1em;
+          width: 1.6em;
+          cursor: pointer;
+        }
+
+        ul {
+          list-style-type: none;
+          margin-top: 4em;
+
+          li {
+            display: block;
+            padding: .7em .5em;
+            font-size: 1.4em;
+
+            &:hover {
+              background: white;
+              color: var(--primary-color);
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
