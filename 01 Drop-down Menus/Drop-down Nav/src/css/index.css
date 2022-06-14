@@ -28,10 +28,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
 }
 
 .container header h2 {
@@ -55,7 +55,8 @@ body {
   display: none;
 }
 
-.container header nav .display {
+.container header nav.display {
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
@@ -63,25 +64,25 @@ body {
   width: 55%;
 }
 
-.container header nav .display img {
+.container header nav.display img {
   float: right;
   margin: 1em;
   width: 1.6em;
   cursor: pointer;
 }
 
-.container header nav .display ul {
+.container header nav.display ul {
   list-style-type: none;
   margin-top: 4em;
 }
 
-.container header nav .display ul li {
+.container header nav.display ul li {
   display: block;
   padding: 0.7em 0.5em;
   font-size: 1.4em;
 }
 
-.container header nav .display ul li:hover {
+.container header nav.display ul li:hover {
   background: white;
   color: var(--primary-color);
   font-weight: bold;

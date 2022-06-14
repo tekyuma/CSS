@@ -21,7 +21,7 @@ body {
 
   header {
     outline: 1px solid black;
-    padding: .5em;
+    padding: 0.5em;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -45,35 +45,36 @@ body {
       outline: 1px solid black;
       margin: 0;
       display: none;
+    }
 
-      .display {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 55%;
+    nav.display {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 55%;
 
-        img {
-          float: right;
-          margin: 1em;
-          width: 1.6em;
-          cursor: pointer;
-        }
+      img {
+        float: right;
+        margin: 1em;
+        width: 1.6em;
+        cursor: pointer;
+      }
 
-        ul {
-          list-style-type: none;
-          margin-top: 4em;
+      ul {
+        list-style-type: none;
+        margin-top: 4em;
 
-          li {
-            display: block;
-            padding: .7em .5em;
-            font-size: 1.4em;
+        li {
+          display: block;
+          padding: 0.7em 0.5em;
+          font-size: 1.4em;
 
-            &:hover {
-              background: white;
-              color: var(--primary-color);
-              font-weight: bold;
-            }
+          &:hover {
+            background: white;
+            color: var(--primary-color);
+            font-weight: bold;
           }
         }
       }
