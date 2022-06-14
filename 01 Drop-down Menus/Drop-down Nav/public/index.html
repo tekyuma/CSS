@@ -1,19 +1,33 @@
 <html>
   <head>
     <title>Classic Drop-down Nav</title>
+    <link rel="stylesheet" href="../src/css/index.css" />
   </head>
+
   <body>
     <div class="container">
       <header>
+        <h2>Asta<span>Yuno</span></h2>
+        <img
+          src="../assets/menu-burger.svg"
+          alt="menu button"
+          data-button="open-menu"
+        />
         <nav>
-          <h2>Asta<span>Yuno</span></h2>
+          <img
+            src="../assets/cross.svg"
+            alt="exit button"
+            data-button="close-menu"
+          />
           <ul>
-            <li>
-              <img src="../assets/menu-burger.svg" alt="menu button" />
-            </li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Pricing</li>
+            <li>Contact</li>
           </ul>
         </nav>
       </header>
     </div>
+    <script src="../src/index.js"></script>
   </body>
 </html>
