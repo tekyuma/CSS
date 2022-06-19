@@ -40,14 +40,24 @@ body {
 
     ul {
       display: flex;
-      gap: 1em;
+      position: relative;
+      gap: 1.7em;
+
+      li {
+        text-align: center;
+        padding: 0 .3em;
+        // margin-right: 1.7rem;
+      }
     }
 
     .reveal {
-      display: none;
+      position: absolute;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      background: $primary-color;
+      color: white;
     }
-
   }
 }
 
